@@ -1,0 +1,792 @@
+[
+    {
+        "id": "5b958097288d36c1",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b7fabba7b871dccd",
+        "type": "ui_form",
+        "z": "5b958097288d36c1",
+        "name": "",
+        "label": "",
+        "group": "afa1725063cde899",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Dependents",
+                "value": "Dependents",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "ApplicantIncome",
+                "value": "Applicant Income",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "CoApplicantIncome",
+                "value": "Co-Applicant Income",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "LoanAmount",
+                "value": "Loan Amount",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Loan_term",
+                "value": "Loan Term",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Dependents": "",
+            "Applicant Income": "",
+            "Co-Applicant Income": "",
+            "Loan Amount": "",
+            "Loan Term": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 290,
+        "y": 140,
+        "wires": [
+            [
+                "dc003fcf62894d61"
+            ]
+        ]
+    },
+    {
+        "id": "5846a1d6103ae37c",
+        "type": "ui_dropdown",
+        "z": "5b958097288d36c1",
+        "name": "",
+        "label": "select your sex",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "afa1725063cde899",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Female",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Male",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "847799e2921360d6"
+            ]
+        ]
+    },
+    {
+        "id": "6593c04cac18c65c",
+        "type": "ui_dropdown",
+        "z": "5b958097288d36c1",
+        "name": "",
+        "label": "Marital Status",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "afa1725063cde899",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Unmarried",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Married",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 320,
+        "y": 260,
+        "wires": [
+            [
+                "77b4aac558321a26"
+            ]
+        ]
+    },
+    {
+        "id": "d2c673eb9e82f3af",
+        "type": "ui_dropdown",
+        "z": "5b958097288d36c1",
+        "name": "",
+        "label": "Education",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "afa1725063cde899",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Uneducated",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Educated",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 300,
+        "y": 320,
+        "wires": [
+            [
+                "eb7f20d59e5f3fdf"
+            ]
+        ]
+    },
+    {
+        "id": "aeb58d0e4079ed16",
+        "type": "ui_dropdown",
+        "z": "5b958097288d36c1",
+        "name": "",
+        "label": "Employment type",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "afa1725063cde899",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Salaried",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Self-employed",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 330,
+        "y": 380,
+        "wires": [
+            [
+                "2f1bb58f6b9f958d"
+            ]
+        ]
+    },
+    {
+        "id": "c05c22bc97ec46db",
+        "type": "ui_dropdown",
+        "z": "5b958097288d36c1",
+        "name": "",
+        "label": "Credit_history_available",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "afa1725063cde899",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "no",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "yes",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 350,
+        "y": 440,
+        "wires": [
+            [
+                "90e08f4b4cde1266"
+            ]
+        ]
+    },
+    {
+        "id": "57e011424146e359",
+        "type": "ui_dropdown",
+        "z": "5b958097288d36c1",
+        "name": "",
+        "label": "Housing",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "afa1725063cde899",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "yes",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "no",
+                "value": 0,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "defe3ea7c2d1e67e"
+            ]
+        ]
+    },
+    {
+        "id": "757db3dea36d20e3",
+        "type": "ui_dropdown",
+        "z": "5b958097288d36c1",
+        "name": "",
+        "label": "Locality",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "afa1725063cde899",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "In-state",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "Out-state",
+                "value": 2,
+                "type": "num"
+            },
+            {
+                "label": "International",
+                "value": 3,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 300,
+        "y": 560,
+        "wires": [
+            [
+                "2a147689c43f9919"
+            ]
+        ]
+    },
+    {
+        "id": "3a0a7e9b06c839a8",
+        "type": "debug",
+        "z": "5b958097288d36c1",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "688ca63376f1561b",
+        "type": "debug",
+        "z": "5b958097288d36c1",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "eeb3c355fa2531d9",
+        "type": "debug",
+        "z": "5b958097288d36c1",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "7aaf9446c127226d",
+        "type": "debug",
+        "z": "5b958097288d36c1",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "29486ea7e7d67c27",
+        "type": "debug",
+        "z": "5b958097288d36c1",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "16e40c41f17cd653",
+        "type": "debug",
+        "z": "5b958097288d36c1",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "f2ec5080faa24722",
+        "type": "debug",
+        "z": "5b958097288d36c1",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "4bb048997d0b0d56",
+        "type": "debug",
+        "z": "5b958097288d36c1",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "dc003fcf62894d61",
+        "type": "function",
+        "z": "5b958097288d36c1",
+        "name": "function 1",
+        "func": "global.set(\"Dependents\", msg.payload.a) \nglobal.set(\"ApplicantIncome\", msg.payload.b) \nglobal.set(\"CoapplicantIncome\", msg.payload.c) \nglobal.set(\"LoanAmount\", msg.payload.d) \nglobal.set(\"Loan_Term\", msg.payload.e) \nvar apikey = \"_Z-8jln-jPNCYWeP2sxrxsRmpDyOP0F9OsWd1cZxY_1r\" \nmsg.headers = { \"content-type\": \"application/x-www-form-urlencoded\" } \nmsg.payload = { \"grant_type\": \"urn:ibm:params:oauth:grant-type:apikey\", \"apikey\": apikey }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 140,
+        "wires": [
+            [
+                "3a0a7e9b06c839a8",
+                "a4447ffebf6d8f97"
+            ]
+        ]
+    },
+    {
+        "id": "847799e2921360d6",
+        "type": "function",
+        "z": "5b958097288d36c1",
+        "name": "function 2",
+        "func": "global.set(\"sex\",msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 200,
+        "wires": [
+            [
+                "688ca63376f1561b"
+            ]
+        ]
+    },
+    {
+        "id": "77b4aac558321a26",
+        "type": "function",
+        "z": "5b958097288d36c1",
+        "name": "function 3",
+        "func": "global.set(\"maritalstatus\", msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 260,
+        "wires": [
+            [
+                "eeb3c355fa2531d9"
+            ]
+        ]
+    },
+    {
+        "id": "eb7f20d59e5f3fdf",
+        "type": "function",
+        "z": "5b958097288d36c1",
+        "name": "function 4",
+        "func": "global.set(\"Education\", msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 320,
+        "wires": [
+            [
+                "7aaf9446c127226d"
+            ]
+        ]
+    },
+    {
+        "id": "2f1bb58f6b9f958d",
+        "type": "function",
+        "z": "5b958097288d36c1",
+        "name": "function 5",
+        "func": "global.set(\"employmenttype\", msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 380,
+        "wires": [
+            [
+                "29486ea7e7d67c27"
+            ]
+        ]
+    },
+    {
+        "id": "90e08f4b4cde1266",
+        "type": "function",
+        "z": "5b958097288d36c1",
+        "name": "function 6",
+        "func": "global.set(\"credithistory\", msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 440,
+        "wires": [
+            [
+                "16e40c41f17cd653"
+            ]
+        ]
+    },
+    {
+        "id": "defe3ea7c2d1e67e",
+        "type": "function",
+        "z": "5b958097288d36c1",
+        "name": "function 7",
+        "func": "global.set(\"housing\", msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 500,
+        "wires": [
+            [
+                "f2ec5080faa24722"
+            ]
+        ]
+    },
+    {
+        "id": "2a147689c43f9919",
+        "type": "function",
+        "z": "5b958097288d36c1",
+        "name": "function 8",
+        "func": "global.set(\"locality\", msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 560,
+        "wires": [
+            [
+                "4bb048997d0b0d56"
+            ]
+        ]
+    },
+    {
+        "id": "a4447ffebf6d8f97",
+        "type": "http request",
+        "z": "5b958097288d36c1",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://iam.cloud.ibm.com/identity/token",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 690,
+        "y": 80,
+        "wires": [
+            [
+                "438faf47625c9a06",
+                "3cf91d5307f15769"
+            ]
+        ]
+    },
+    {
+        "id": "3cf91d5307f15769",
+        "type": "debug",
+        "z": "5b958097288d36c1",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "438faf47625c9a06",
+        "type": "function",
+        "z": "5b958097288d36c1",
+        "name": "function 9",
+        "func": "var sex = global.get(\"sex\")\nvar maritalstatus = global.get(\"maritalstatus\")\nvar dependents = global.get(\"dependents\")\nvar education = global.get(\"education\")\nvar employmenttype = global.get(\"employmenttype\")\nvar applicantincome = global.get(\"applicantincome\")\nvar coapplicantincome = global.get(\"coapplicantincome\")\nvar loanamount = global.get(\"loanamount\")\nvar loanterm = global.get(\"loanterm\")\nvar credit_history_availablity = global.get(\"credit_history_availablity\")\nvar housing = global.get(\"housing\")\nvar locality = global.get(\"locality\")\nvar token = msg.payload.access_token\nmsg.headers = { 'Content-Type': 'application/json', \"Authorization\": \"Bearer\" + token, \"Accept\": \"application/json\" }\nmsg.payload = { \"input_data\": [{ \"fields\": [[\"sex\", \"maritalstatus\", \"dependents\", \"education\", \"employmenttype\", \"applicantincome\", \"coapplicantincome\", \"loanamount\", \"loanterm\", \"credit_history_availablity\", \"housing\", \"locality\"]], \"values\": [[sex, maritalstatus, dependents, education, employmenttype, applicantincome, coapplicantincome, loanamount, loanterm, credit_history_availablity, housing, locality]] }] }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 80,
+        "wires": [
+            [
+                "311ed603937fb991"
+            ]
+        ]
+    },
+    {
+        "id": "311ed603937fb991",
+        "type": "http request",
+        "z": "5b958097288d36c1",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/916edc93-7dff-48b9-b50c-ded5c457d7d1/predictions?version=2021-05-01",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1250,
+        "y": 80,
+        "wires": [
+            [
+                "cef636585936e1ca",
+                "6fb2239e39e178b0"
+            ]
+        ]
+    },
+    {
+        "id": "6fb2239e39e178b0",
+        "type": "debug",
+        "z": "5b958097288d36c1",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1460,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "cef636585936e1ca",
+        "type": "function",
+        "z": "5b958097288d36c1",
+        "name": "function 10",
+        "func": "// Set the desired output as the payload\nmsg.payload = msg.payload.predictions[0].values[0][0];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1470,
+        "y": 80,
+        "wires": [
+            [
+                "ffbc66395521275f"
+            ]
+        ]
+    },
+    {
+        "id": "ffbc66395521275f",
+        "type": "ui_text",
+        "z": "5b958097288d36c1",
+        "group": "afa1725063cde899",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Chances of fraud in percentage:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1830,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "afa1725063cde899",
+        "type": "ui_group",
+        "name": "Enter the values:",
+        "tab": "0ff193cefd37e85b",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0ff193cefd37e85b",
+        "type": "ui_tab",
+        "name": "PREDICTION",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
