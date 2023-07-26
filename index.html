@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Fraud Risk Prediction</title>
+    </head>
+    <body>
+        <form class="form" action="/login" method="post">
+            <center>
+            <p class="id1"><b>Enter the value</b></p>
+             <label>Select your Sex:</label>
+             <select name="sex" id="sex">
+                <option Value="male">Male</option>
+                <option Value="female">Female</option>
+             </select><br><br>
+             <label>Marital Status:</label>
+             <select name="status" id="status">
+                <option Value="married">Married</option>
+                <option Value="unmarried">Unmarried</option>
+             </select><br><br>
+             <label>Education:</label>
+             <select name="Education" id="Education">
+                <option Value="educated">Educated</option>
+                <option Value="uneducated">Uneducated</option>
+             </select><br><br>
+             <label>Employment Type:</label>
+             <select name="Type" id="Type">
+                <option Value="salaried">Salary</option>
+                <option Value="self">Self Employment</option>
+             </select><br><br>
+             <label>Credit_History_Available:</label>
+             <select name="history" id="history">
+                <option Value="yes">Yes</option>
+                <option Value="no">No</option>
+             </select><br><br>
+             <label>Housing:</label>
+             <select name="housing" id="housing">
+                <option Value="yes1">Yes</option>
+                <option Value="no1">No</option>
+             </select><br><br>
+             <label>Locality:</label>
+             <select name="Locality" id="Locality">
+                <option Value="in">In_State</option>
+                <option Value="out">Out_State</option>
+                <option Value="inter">International</option>
+            </select><br><br>
+            <label>Dependents</label><br>
+            <input type="number" name="Dependents" required><br><br>
+            <label>ApplicantIncome</label><br>
+            <input type="number" name="Income" required><br><br>
+            <label>CoApplicantIncome</label><br>
+            <input type="number" name="CoIncome" required><br><br>
+            <label>LoanAmount</label><br>
+            <input type="number" name="Loan" required><br><br>
+            <label>Loan_Term</label><br>
+            <input type="number" name="term" required><br><br>
+            <input type="Submit" value="Submit" name="Submit" id="submit">
+        </center>
+        </form>
+        <b>{{y}}</b>
+    </body>
+</html>
